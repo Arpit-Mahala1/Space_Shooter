@@ -1,33 +1,3 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-
-//public class PlayerUI : MonoBehaviour
-//{
-//    public GameObject Player1UI;
-//    public GameObject Player2UI;
-//    public GameObject Player1;
-//    public GameObject Player2;
-//    public void Initialize()
-//    {
-//        Player1 = GameObject.FindWithTag("Player1");
-//        Player2 = GameObject.FindWithTag("Player2");
-//        Debug.Log(Player1.name);
-//        Debug.Log(Player2.name);
-
-
-
-//    }
-
-
-//    void Update()
-//    {
-//        Player1UI.transform.position=Player1UI.transform.position;
-//        Player2UI.transform.position=Player2UI.transform.position;
-//    }
-//}
-
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
