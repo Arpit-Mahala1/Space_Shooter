@@ -2641,7 +2641,7 @@ MonoBehaviour:
   mainMenuUI: {fileID: 1224827057}
   endGameUI: {fileID: 1601983446}
   planeSpawn: {fileID: 1134586284}
-  spawn: {fileID: 1134586287}
+  spawn: {fileID: 1134586293}
   gameTimer: {fileID: 1134586291}
   playerUI: {fileID: 1134586292}
 --- !u!4 &939277611
@@ -2807,12 +2807,12 @@ GameObject:
   - component: {fileID: 1134586284}
   - component: {fileID: 1134586286}
   - component: {fileID: 1134586285}
-  - component: {fileID: 1134586288}
-  - component: {fileID: 1134586287}
   - component: {fileID: 1134586290}
   - component: {fileID: 1134586289}
   - component: {fileID: 1134586291}
+  - component: {fileID: 1134586293}
   - component: {fileID: 1134586292}
+  - component: {fileID: 1134586294}
   m_Layer: 0
   m_Name: Game_manager
   m_TagString: Untagged
@@ -2960,42 +2960,6 @@ MonoBehaviour:
     type: 3}
   uiPanel: {fileID: 0}
   winnerText: {fileID: 0}
---- !u!114 &1134586287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134586281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474f8d409690a894588c59af2b405ff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocks:
-  - {fileID: 7437889339238721774, guid: a028a9caf7ccf2443a238296ded73a04, type: 3}
-  - {fileID: 2746130058158584518, guid: 41059c7f21dd4994d9797364e07a3d45, type: 3}
-  - {fileID: 1797448692007430590, guid: 579e809d2465e864795196e5b0545d73, type: 3}
-  - {fileID: 5088785953716078452, guid: b31bb4b021ef65f4fbaf7f2d7e56f967, type: 3}
-  - {fileID: 1630719386496763137, guid: 1b25ec5b3aa236f49bb4e00c0b8a5efe, type: 3}
-  spawnAreaCenter: {x: 1000, y: 1000, z: 0}
-  spawnAreaSize: {x: 7000, y: 3000, z: 3000}
-  numberOfAsteroidsPerSpawn: 2000
---- !u!114 &1134586288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134586281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ed2fabbe245c74bac640aff51018dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 0}
-  progressBar: {fileID: 0}
-  progressText: {fileID: 0}
 --- !u!33 &1134586289
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3077,6 +3041,35 @@ MonoBehaviour:
   Player1UI: {fileID: 2081706330}
   Player2UI: {fileID: 766483290}
   UIOffset: {x: 0, y: 2, z: 0}
+--- !u!114 &1134586293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134586281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2907d3b3ea4b24e8219772cbb106e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rocks:
+  - {fileID: 7437889339238721774, guid: a028a9caf7ccf2443a238296ded73a04, type: 3}
+  - {fileID: 2746130058158584518, guid: 41059c7f21dd4994d9797364e07a3d45, type: 3}
+  - {fileID: 1797448692007430590, guid: 579e809d2465e864795196e5b0545d73, type: 3}
+  - {fileID: 5088785953716078452, guid: b31bb4b021ef65f4fbaf7f2d7e56f967, type: 3}
+  - {fileID: 1630719386496763137, guid: 1b25ec5b3aa236f49bb4e00c0b8a5efe, type: 3}
+  spawnAreaCenter: {x: 1000, y: 1000, z: 0}
+  spawnAreaSize: {x: 7000, y: 3000, z: 3000}
+  numberOfAsteroidsPerSpawn: 5000
+--- !u!81 &1134586294
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134586281}
+  m_Enabled: 1
 --- !u!1 &1170219406
 GameObject:
   m_ObjectHideFlags: 0
